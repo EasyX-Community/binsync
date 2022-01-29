@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+export vUSER=""
+export vHOST=""
+
+export vBINSYNCDIR=""
+
+# Autofilled Variables (do not change)
+export vPWD=""
+export vPATH=""
