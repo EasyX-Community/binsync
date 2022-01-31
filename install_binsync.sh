@@ -170,7 +170,7 @@ fi
 
 # Check if vPWD/bin is added to $PATH
 if [[ "${vPATH}" == *"${vPWD}/bin"* ]]; then
-  echo "binsync bin directory already in path [${vPATH}]"
+  echo "binsync bin directory already in path"
   echo ""
 else
   echo "Adding binsync bin directory to \$PATH"
