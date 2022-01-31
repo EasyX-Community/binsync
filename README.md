@@ -73,7 +73,7 @@ Yes I am inclusive of persons inside my non-organization (myself) and those in m
 
 ![not z](etc/not-z.png)
 
-Even if every repository host I utilize changes to something other than origin/master, I am still using it. I am used to it, it is not confusing, and it has nothing to do with: race, gender, identity, religion, disability, belief or any of the countless phobias. Programming code that is compiled down to non-readable code is no place for SJW-BS.
+Even if every repository host I utilize changes to something other than origin/master, I am still using it. I am used to it, it is not confusing, and it has nothing to do with: race, gender, identity, religion, disability, belief or any of the countless phobias. Programming code that nobody reads is no place for SJW-BS.
 
 
 #### Donations:
