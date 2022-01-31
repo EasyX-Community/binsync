@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+# Autofilled Variables (do not change)
+export vPWD=$(pwd)
+export vPATH=$(echo $PATH)
+export vVER=$(cat .binsync.version)
+
+timestamp() {
+  echo -n "[$(date +"%Y-%m-%d %H-%M-%S")] "
+}
+
+if [[ -f ".binsync.config" ]]; then
+
+  source .binsync.config
+
+  timestamp ; echo ""
+  timestamp ; echo "binsync-pull ${vVER}"
+  timestamp ; echo ""
+  timestamp ; echo "user                [$vUSER]"
+  timestamp ; echo "host                [$vHOST]"
+  timestamp ; echo "working directory   [$vPWD]"
+  timestamp ; echo "bin directory       [$vBINSYNCDIR]"
+  timestamp ; echo "path                [$vPATH]"
+  timestamp ; echo ""
+
+else
+
+  echo ".binsync.config does not exist.\nPlease read the README.md and run the installer!"
+  echo ""
+  exit
+
+fi
+
+rsync -u -d -p -E -z -v --delete --exclude=.* ${vUSER}@${vHOST}:${vBINSYNCDIR}/ ${vBINSYNCDIR}
+
+# Clear ENV vars for security
+source .binsync.config.clear

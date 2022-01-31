@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+#
+## SSH Connection Info
+#
+
+# Username for SSH connection
+export vUSER="root"
+
+# Host IP for SSH connection
+export vHOST="192.168.20.110"
+
+
+#
+## Directories
+#
+
+# Location of binsync dir to sync (DO NOT put trailing /)
+export vBINSYNCDIR="/root/bin"
+
+# Location of this repository
+export vREPODIR="/root/local-repos/binsync"

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+export vUSER=""
+export vHOST=""
+
+export vBINSYNCDIR="/root/bin" # DO NOT put trailing /
