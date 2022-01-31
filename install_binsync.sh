@@ -36,19 +36,19 @@ else
   apt update
   echo ""
 
-  vRSYNC=$(dpkg-query -l rsync)
-  if [[ "no packages found matching" == *"${vRSYNC}"* ]]; then
-    echo "installing rsync"
-    echo ""
-    apt install -y rsync
-    echo ""
-  fi
-
-  vDIALOG=$(dpkg-query -l dialog)
-  if [[ "no packages found matching" == *"${vDIALOG}"* ]]; then
+  vDIALOG=$(dpkg-query -s dialog)
+  if [[ "dpkg-query: package 'dialog' is not installed" == *"${vDIALOG}"* ]]; then
     echo "installing dialog"
     echo ""
     apt install -y dialog
+    echo ""
+  fi
+
+  vRSYNC=$(dpkg-query -s rsync)
+  if [[ "dpkg-query: package 'rsync' is not installed" == *"${vRSYNC}"* ]]; then
+    echo "installing rsync"
+    echo ""
+    apt install -y rsync
     echo ""
   fi
 
