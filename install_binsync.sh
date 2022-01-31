@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+cd ${SCRIPT_DIR}
+
 # Autofilled Variables (do not change)
 export vPWD=$(pwd)
 export vPATH=$(echo $PATH)
@@ -24,7 +27,6 @@ if [ -f "bin/.binsync.config" ] ; then
   echo ""
   echo "user                [$vUSER]"
   echo "host                [$vHOST]"
-#  echo "source directory    [$vSOURCEDIR]"
   echo "working directory   [$vPWD]"
   echo "bin directory       [$vBINSYNCDIR]"
   echo "path                [$vPATH]"
@@ -119,7 +121,7 @@ else
 
     dialog --stdout --title "Configuration" \
       --backtitle "binsync ${vVER} setup" \
-      --yesno "Is this information correct?\nUser: ${vUSER}\nHost IP: ${vHOST}\nBinsync Dir: ${vBINSYNCDIR}\nRepo Dir: ${vPWD}\nIs Host: ${vHOSTMACHINEENG}\nInstall Cronjob: ${vCRONJOBENG}\nWeekly update cronjob: ${vCRONJOBUPDATEENG}" 15 60 \
+      --yesno "Is this information correct?\n\nUser: ${vUSER}\nHost IP: ${vHOST}\nBinsync Dir: ${vBINSYNCDIR}\nRepo Dir: ${vPWD}\n\nIs Host: ${vHOSTMACHINEENG}\nInstall Cronjob: ${vCRONJOBENG}\nWeekly update cronjob: ${vCRONJOBUPDATEENG}" 15 60 \
     3>&1 1>&2 2>&3 3>&-
     vCONTINUEVAR=$?
 
