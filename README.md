@@ -69,6 +69,7 @@ If you are unsure about crontab times, this calculator will come in handy [https
 Yes I am inclusive of persons inside my non-organization - but I am exclusive of persons outside my non-organization. I can not care for everyone in the world, no person can. You cannot re-write the dictionary. You'd be overloaded in both cases. Fairly logical. Aside from that there are 2 main reasons why I refuse to change away from origin/master:
 - I use [Gogs](https://gogs.io/) primarily and other repository hosts, many of which use origin/master
 - Look at the not z in the image below. Are you going to petition linux devs to replace unary logical operators too? Or how about reorganize the comparison operators?
+
 ![not z](etc/not-z.png)
 
 Even if every repository host I utilize changes to something other than origin/master, I am still using it. I am used to it, it is not confusing, and it has nothing to do with: race, gender, identity, religion, disability, belief or any of the countless phobias. Programming code that is compiled down to non-readable code is no place for SJW-BS.
