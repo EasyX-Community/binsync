@@ -1,4 +1,4 @@
-# binsync v1.0.4
+# binsync v1.0.5
 
 #### Description:
 Synchronize bin directory across multiple systems with rsync. Featuring a new installer. Linux only.
