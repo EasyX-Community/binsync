@@ -39,7 +39,7 @@ else
   echo ""
 
   vDIALOG=$(dpkg-query -s dialog)
-  if [[ "dpkg-query: package 'dialog' is not installed" == *"${vDIALOG}"* ]]; then
+  if [[ "package 'dialog' is not installed" == *"${vDIALOG}"* ]]; then
     echo "installing dialog"
     echo ""
     apt install -y dialog
@@ -47,7 +47,7 @@ else
   fi
 
   vRSYNC=$(dpkg-query -s rsync)
-  if [[ "dpkg-query: package 'rsync' is not installed" == *"${vRSYNC}"* ]]; then
+  if [[ "package 'rsync' is not installed" == *"${vRSYNC}"* ]]; then
     echo "installing rsync"
     echo ""
     apt install -y rsync
