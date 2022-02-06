@@ -63,6 +63,7 @@ It is advised you select **'yes'** and then if you want to change it you can use
 If you are unsure about crontab times, this calculator will come in handy [https://crontab.guru/](https://crontab.guru/)
 
 #### Coming features:
+- Support multiple bindir's (so can have one dir per architecture)
 - Can't think of any at the moment, but please create GitHub or Gogs issue ticket if you have any suggestions
 
 
@@ -72,8 +73,6 @@ Yes I am inclusive of persons inside my non-organization (myself) and those in m
 - Look at the not z in the image below. Are you going to petition linux devs to replace bash's unary logical operators too? Or how about reorganize and switch around the comparison operators? You people have gone mad.
 
 ![not z](etc/not-z.png)
-
-Even if every repository host I utilize changes to something other than origin/master, I am still using it. I am used to origin/master, it is not confusing, and it has nothing to do with: race, gender, identity, religion, disability, belief or any of the countless phobias. Programming code that nobody reads is no place for SJW-BS.
 
 
 #### Donations:
